@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frm_backup</class>
+ <widget class="QWidget" name="frm_backup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1166</width>
+    <height>702</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Ferramenta de Backup</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icon.png</normaloff>icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(226, 226, 226);</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>27</x>
+     <y>30</y>
+     <width>72</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(85, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>Origem:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>27</x>
+     <y>80</y>
+     <width>75</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(85, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>Destino:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txt_origem">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>30</y>
+     <width>591</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frame">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txt_destino">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>80</y>
+     <width>591</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frame">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bt_ad_origem">
+   <property name="geometry">
+    <rect>
+     <x>737</x>
+     <y>30</y>
+     <width>111</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">  background-color: rgb(85, 85, 255);
+  color: rgb(255, 255, 255);
+  border-radius: 8px;</string>
+   </property>
+   <property name="text">
+    <string>Adicionar</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bt_ad_destino">
+   <property name="geometry">
+    <rect>
+     <x>737</x>
+     <y>80</y>
+     <width>111</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">  background-color: rgb(85, 85, 255);
+  color: rgb(255, 255, 255);
+  border-radius: 8px;</string>
+   </property>
+   <property name="text">
+    <string>Adicionar</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>27</x>
+     <y>130</y>
+     <width>81</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(85, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>Horário:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>180</y>
+     <width>221</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(111, 111, 111);</string>
+   </property>
+   <property name="text">
+    <string>Programação de backup</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="bt_salvar">
+   <property name="geometry">
+    <rect>
+     <x>987</x>
+     <y>625</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">  background-color: rgb(85, 85, 255);
+  color: rgb(255, 255, 255);
+  border-radius: 8px;</string>
+   </property>
+   <property name="text">
+    <string>Agendar</string>
+   </property>
+  </widget>
+  <widget class="QTimeEdit" name="tm_horas">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>130</y>
+     <width>141</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frame">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tb_agendamento">
+   <property name="geometry">
+    <rect>
+     <x>27</x>
+     <y>210</y>
+     <width>1111</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);</string>
+   </property>
+   <column>
+    <property name="text">
+     <string>ID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Nome</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Origem</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Destino</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Horário</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Desligar PC</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="bt_excluir">
+   <property name="geometry">
+    <rect>
+     <x>830</x>
+     <y>625</y>
+     <width>141</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 0, 0);
+color: rgb(255, 255, 255);
+border-radius: 8px;</string>
+   </property>
+   <property name="text">
+    <string>Excluir</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="rd_desligar">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>170</y>
+     <width>361</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 0, 0);</string>
+   </property>
+   <property name="text">
+    <string>Desligar o PC ao Finalizar o Buckup!</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_status">
+   <property name="geometry">
+    <rect>
+     <x>27</x>
+     <y>581</y>
+     <width>1111</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>9</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(85, 85, 255);</string>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="txt_nome_backup">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>130</y>
+     <width>271</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius: 8px;
+background-color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="frame">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>130</y>
+     <width>141</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(85, 0, 255);</string>
+   </property>
+   <property name="text">
+    <string>Nome Backup:</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>txt_origem</tabstop>
+  <tabstop>bt_ad_origem</tabstop>
+  <tabstop>txt_destino</tabstop>
+  <tabstop>bt_ad_destino</tabstop>
+  <tabstop>tm_horas</tabstop>
+  <tabstop>txt_nome_backup</tabstop>
+  <tabstop>rd_desligar</tabstop>
+  <tabstop>bt_salvar</tabstop>
+  <tabstop>bt_excluir</tabstop>
+  <tabstop>tb_agendamento</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
