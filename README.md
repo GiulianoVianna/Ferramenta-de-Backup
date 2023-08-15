@@ -17,7 +17,7 @@ Seleção de Origem e Destino: Você pode selecionar facilmente a origem (os arq
   
 * Interface Intuitiva: Com uma interface gráfica simples e intuitiva, a aplicação é fácil de usar, mesmo para usuários sem experiência técnica.
   
-* Compatibilidade: Funciona em sistemas operacionais Windows e Linux, permitindo flexibilidade e adaptação a diferentes ambientes de computação.
+* Compatibilidade: Funciona em sistemas operacionais Windows e Linux, permitindo flexibilidade e adaptação a diferentes sistemas operacionais.
 
 ### Imagem da Aplicação
 
