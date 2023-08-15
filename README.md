@@ -23,3 +23,16 @@ Seleção de Origem e Destino: Você pode selecionar facilmente a origem (os arq
 
 ![image](https://github.com/GiulianoVianna/Ferramenta-de-Backup/assets/101942554/ccfc8419-28ff-4fee-b4be-5ec4d0f196f5)
 
+* Ao dar um clique duplo na linha do agendamento, a tela de edição será aberta, permitindo que você ajuste facilmente os detalhes do agendamento conforme necessário.
+
+  ![image](https://github.com/GiulianoVianna/Ferramenta-de-Backup/assets/101942554/89a6aa5e-f0c3-42bf-a78e-b64ca095d8ad)
+  
+  ![image](https://github.com/GiulianoVianna/Ferramenta-de-Backup/assets/101942554/4e2fc4d7-6c47-4fb6-82d0-f8690a4600c6)
+
+  * Um ícone da aplicação fica disponível na bandeja do sistema, oferecendo acesso rápido e conveniente às funcionalidades do programa sem a necessidade de manter a janela principal aberta.
+
+    ![image](https://github.com/GiulianoVianna/Ferramenta-de-Backup/assets/101942554/83f52438-25c5-4789-b1bc-49b41a632ac0)
+
+
+
+
