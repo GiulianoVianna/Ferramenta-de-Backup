@@ -21,7 +21,7 @@ Seleção de Origem e Destino: Você pode selecionar facilmente a origem (os arq
 
 ### Imagem da Aplicação
 
-![image](https://github.com/GiulianoVianna/Ferramenta-de-Backup/assets/101942554/ccfc8419-28ff-4fee-b4be-5ec4d0f196f5)
+![image](https://github.com/GiulianoVianna/Ferramenta-de-Backup/assets/101942554/f6a97a19-e428-47b4-a8ea-7cab650d21cd)
 
 * Ao dar um clique duplo na linha do agendamento, a tela de edição será aberta, permitindo que você ajuste facilmente os detalhes do agendamento conforme necessário.
 
