@@ -242,7 +242,7 @@ class MainApp(QMainWindow):
         self.exibir_mensagem_status("Desligando o PC.")
         
         if sistema_operacional == "windows":
-            os.system("shutdown /s /t 0")
+            os.system("shutdown /s /f /t 0")
         elif sistema_operacional == "linux":
             os.system("poweroff")
         else:
