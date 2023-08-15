@@ -170,6 +170,11 @@ class MainApp(QMainWindow):
 
         self.exibir_mensagem_status("Agendamento salvo com sucesso.")
         self.atualizar_tabela_agendamento()
+        self.txt_origem.setText("")
+        self.txt_destino.setText("")
+        self.tm_horas.setTime(QTime(00, 00))
+        self.txt_nome_backup.setText("")
+        self.rd_desligar.setChecked(False)
 
     # Atualiza dados da tabela
     def atualizar_tabela_agendamento(self):
