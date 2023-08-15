@@ -6,7 +6,7 @@ import time
 import zipfile
 from PyQt5 import uic
 from PyQt5.QtGui import QIcon, QCursor
-from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog, QTableWidgetItem, QSystemTrayIcon, QMenu
+from PyQt5.QtWidgets import QApplication, QMainWindow, QFileDialog, QTableWidgetItem, QSystemTrayIcon, QMenu, QMessageBox
 from PyQt5.QtCore import QTime, pyqtSignal  
 from datetime import datetime
 from threading import Thread
@@ -133,9 +133,20 @@ class MainApp(QMainWindow):
         self.bt_salvar.clicked.connect(self.salvar_agendamento)
         self.bt_excluir.clicked.connect(self.excluir_agendamento)
 
-    # Seleciona diretório de origem
+    # Seleciona diretório ou arquivo de origem
     def selecionar_origem(self):
-        origem = QFileDialog.getExistingDirectory(self, "Selecione o Diretório de Origem")
+        dialog = QMessageBox(self)
+        dialog.setWindowTitle("Selecionar Origem")
+        dialog.setText("Você deseja selecionar um arquivo ou diretório?")
+        dialog.addButton("Arquivo", QMessageBox.AcceptRole)
+        dialog.addButton("Diretório", QMessageBox.RejectRole)
+        result = dialog.exec_()
+
+        if result == QMessageBox.AcceptRole:
+            origem, _ = QFileDialog.getOpenFileName(self, "Selecione o Arquivo de Origem")
+        else:
+            origem = QFileDialog.getExistingDirectory(self, "Selecione o Diretório de Origem")
+
         if origem:
             self.txt_origem.setText(origem)
 
